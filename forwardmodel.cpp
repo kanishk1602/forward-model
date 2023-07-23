@@ -681,11 +681,10 @@ int ii;
             }
         }
         else {
-            for (ii = 0; ii < Nn; ii++){
-                 if (vfi[countr - 1] > 0 && vfi[countr - 1] < fks.size() - 1) {
+            if (vfi[countr - 1] > 0 && vfi[countr - 1] < fks.size() - 1) {
                 double df = fks[vfi[countr - 1] + 1] - fks[vfi[countr - 1] - 1];
                 double derivative = (snsmf_vs[ii][vfi[countr - 1] + 1] - snsmf_vs[ii][vfi[countr - 1] - 1]) / (df * 2 * M_PI);
-            }
+
                 for (int ii = 0; ii < Nn; ii++) {
                     snsmf[ii][countr - 1] = snsmf_vs[ii][vfi[countr - 1]] +
                         (U[vfi[countr - 1]] / vp[vfi[countr - 1]]) * (2 * M_PI * fks[vfi[countr - 1]] * derivative);

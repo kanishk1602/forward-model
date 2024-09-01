@@ -1,4 +1,4 @@
-# MASW Surface Wave Inversion Using Machine Learning Techniques
+# MASW Surface Wave Inversion
 
 This project focuses on implementing machine learning algorithms to enhance the accuracy of surface wave inversion, specifically for analyzing seismic data. The developed algorithms are applied to the Multi-Channel Analysis of Surface Waves (MASW) method to estimate subsurface properties such as layer velocities and depths, which are crucial for geophysical investigations in engineering and exploration.
 
